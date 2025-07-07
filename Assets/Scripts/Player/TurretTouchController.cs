@@ -16,7 +16,7 @@ namespace Player
         private Vector2 _touchStartPos, _movementVelocity;
         private bool _isDragging;
     
-        private readonly float _rotationSpeed = 20;
+        private readonly float _rotationSpeed = 16;
     
         private readonly float _friction = 0.9f;
 
