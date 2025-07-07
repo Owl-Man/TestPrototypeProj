@@ -17,7 +17,7 @@ https://assetstore.unity.com/packages/3d/props/weapons/sci-fi-turrets-cannon-696
 
 Пройдясь коротко по основным скриптам:
 
-TurretTouchController - отвечает за управление турлью
+TurretTouchController - отвечает за управление турелью
 
 ShootingController - отвечает за стрельбу
 
