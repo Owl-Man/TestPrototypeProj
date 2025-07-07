@@ -1,11 +1,16 @@
 # TestPrototypeProj
 
+Собранный билд под андроид находится в Releases.
+
+Описание проекта:
 В проекте используется DI Container, конкретно фреймворк Zenject. 
 
 Использованные ассеты:
 
 https://assetstore.unity.com/packages/vfx/particles/particle-pack-127325
+
 https://assetstore.unity.com/packages/3d/vehicles/low-poly-military-vehicles-package-276939
+
 https://assetstore.unity.com/packages/3d/props/weapons/sci-fi-turrets-cannon-69615
 
 На сцене стоит один SceneContext, в которым расположены все инсталлеры (обьект SYSTEM). Скрипты инсталлеров находятся в папке Scripts/Installer. У каждого инсталлера своя ответственность, выделенная в названии. Основные скрипты, такие как ShootingController, TurretTouchController, WavesManager и др. не являются MonoBehaviour и создаются сразу в контейнере через инсталлеры. Соответственно ссылки на данные классы прокидываются через аттрибут [Inject] перед методом-конструктором (не путать с конструктором класса). Остальные ссылки на обьекты на сцене также прокидываются используя инсталлеры.
